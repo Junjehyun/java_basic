@@ -98,7 +98,7 @@ result = !(k == s); // true
 int w = 10;
 int g = 5;
 
-int max = (w > g) ? w : g; // w가 g보다 크면 w를 작거나 같으면 g를 max변수에 저장
+int max = (w > g) ? w : g; // w가 g보다 크면 w를, 작거나 같으면 g를 max변수에 저장
 System.out.println(max); // 10출력
 // 위 코드에서 '(w > g) ? w : g' 부분은 w가 g보다 크면 w를, 작거나 같으면 g를 반환한다.
 // 따라서 max에는 변수 10이 저장된다.
