@@ -4,8 +4,6 @@
 
 package basic_course;
 
-import java.util.Arrays;
-
 public class basic04 {
     public static void main(String[] args) {
         // 1★1차원 배열과 2차원 배열
