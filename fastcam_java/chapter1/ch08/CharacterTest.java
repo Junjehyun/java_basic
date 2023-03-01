@@ -1,4 +1,4 @@
-package fastcam_java.chapter1;
+package fastcam_java.chapter1.ch08;
 
 public class CharacterTest {
     public static void main(String[] args) {

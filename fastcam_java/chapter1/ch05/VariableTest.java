@@ -1,4 +1,4 @@
-package fastcam_java.chapter1;
+package fastcam_java.chapter1.ch05;
 
 public class VariableTest {
 

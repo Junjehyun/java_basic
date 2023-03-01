@@ -1,4 +1,4 @@
-package fastcam_java.chapter1;
+package fastcam_java.chapter1.ch09;
 
 public class LocalVariableInter {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package fastcam_java.chapter1;
+package fastcam_java.chapter1.ch07;
 
 public class DoubleTest {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package fastcam_java.chapter1;
+package fastcam_java.chapter1.ch11;
 
 public class OperatorTest {
     public static void main(String[] args) {

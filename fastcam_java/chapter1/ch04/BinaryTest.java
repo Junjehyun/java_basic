@@ -1,4 +1,4 @@
-package fastcam_java.chapter1;
+package fastcam_java.chapter1.ch04;
 
 public class BinaryTest {
     public static void main(String[] args) {
