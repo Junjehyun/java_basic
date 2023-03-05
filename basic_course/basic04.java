@@ -4,7 +4,7 @@
 
 package basic_course;
 
-public class basic04 {
+public class Basic04 {
     public static void main(String[] args) {
         // 1★1차원 배열과 2차원 배열
         // 배열(Array)은 같은 자료형의 데이터를 하나의 변수에 저장하는 자료구조이다.

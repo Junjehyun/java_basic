@@ -8,6 +8,6 @@
 
 package basic_course;
 
-public class basic05 {
+public class Basic05 {
     
 }

@@ -13,7 +13,7 @@
 // 1★변수와 상수의 예시 
 package basic_course;
 
-public class basic01 {
+public class Basic01 {
     public static void main(String[] args) {
         // 아래는 변수 선언과 동시에 값을 넣은 경우이다.
         String name = "Jun"; // String타입은 문자열을 다루기 위한 데이터타입.  큰 따옴표 써야됨.

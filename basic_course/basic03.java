@@ -4,7 +4,7 @@
 // 3★break와 continue문
 package basic_course;
 
-public class basic03 {
+public class Basic03 {
     public static void main(String[] args) {
 // --------------------------------------------------------------------------------------------------------------------        
     // 1★조건문 (if문, switch문)

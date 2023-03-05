@@ -6,7 +6,7 @@
 // 5★삼항 연산자
 package basic_course;
 
-public class baisc02 {
+public class Basic02 {
     public static void main(String[] args) {
     //1★산술 연산자
     //산술 연산자는 사칙연산에 사용되며, 자료형에 따라 다르게 동작함. 예를들어 int형 변수 a와 b에 각각 5와 3을 저장하고
