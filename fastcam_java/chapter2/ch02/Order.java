@@ -1,4 +1,4 @@
-package fastcam_java.chapter2.ch01;
+package fastcam_java.chapter2.ch02;
 
 public class Order {
     // 여기서는 주문이라는 클래스에, 

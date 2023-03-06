@@ -1,4 +1,4 @@
-package fastcam_java.chapter2.ch01;
+package fastcam_java.chapter2.ch02;
 
 // 객체 지향 프로그램을 할 때는, 객체를 정의하고, 각 객체의 속성을 멤버 변수로 역할을 메서드로 구현하고,
 // 각 객체간의 협력을 구현한다.
