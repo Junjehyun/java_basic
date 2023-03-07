@@ -1,10 +1,8 @@
-// 05.클래스와 객체
+// 05-1.클래스와 객체
 // 1★클래스 정의와 객체 생성
 // 2★클래스 멤버 (필드, 메서드)
 // 3★접근 제어자 (public, private, protected, default)
 // 4★생성자 
-// 5★this 키워드와 객체 참조 변수
-// 6★static 멤버 (필드, 메서드)
 // ----------------------------------------------------------------------------------------------------------------   
 //1★클래스 정의와 객체 생성
 // 클래스는 객체를 생성하기 위한 일종의 틀이다. 클래스를 정의하면 그 클래스에
@@ -56,7 +54,7 @@
 // 아래에서 자세히 살펴보자.
 package basic_course;
 
-    public class Basic05 {
+    public class Basic05_1 {
         // 이 클래스는 반지름과 색상을 필드로 갖는다.
         // private으로 선언되어 있기 때문에 클래스 외부에서 직접 접근을 할 수 없다.
         // 대신 필드에 접근하기 위한 getter와 setter메서드를 제공한다.
@@ -64,7 +62,7 @@ package basic_course;
         private String color; // 색상 필드 
 
         // Basic05_1 클래스의 생성자.
-        public Basic05(double radius, String color) {
+        public Basic05_1(double radius, String color) {
             this.radius = radius;
             this.color = color;
         }
@@ -117,7 +115,7 @@ package basic_course;
 // 이 접근 제어자들은 클래스, 필드, 메서드 앞에 붙여서 사용하며 각각의 접근 범위를 설정가능.
 // 이를 통해 적절한 정보 은닉과 보안을 유지하며, 유지보수성과 확장성을 높일 수 있다.
 // ----------------------------------------------------------------------------------------------------------------   
-// 4★생성자  (Constructor)
+// 4★생성자(Constructor)
 // 생성자(Constructor)는 클래스의 인스턴트(객체)가 생성될 때 호출되는 특별한 메서드이다.
 // 인스턴스 변수의 초기화 등의 작업을 수행하는 역할을 한다.
 // 생성자의 특징은 다음과 같다.
@@ -129,15 +127,21 @@ package basic_course;
 // 다른 생성자를 정의할 수 있다.
 // 예시 코드를 살펴보자.
 class Student {
+    // private 접근 제어자를 사용하여 name과 age 필드를 선언했다. 
+    // 이는 클래스 내부에서만 접근 가능하도록 하기위함.
     private String name;
     private int age;
 
-    // 매개변수가 없는 기본 생성자
+    // 첫번째 생성자 -> 매개변수가 없는 기본 생성자
+    // 이 생성자에서는 name과 age를 각각 Unknown과 0으로 초기화 하였다.
+    // 즉, 이 생성자로 객체를 생성하면 이름과 나이가 지정되지 않은 기본값으로 초기화 된다.
     public Student() {
         this.name = "Unknown";
         this.age = 0;
     }
-    // 매개변수가 있는 생성자
+    // 두번째 생성자 -> 매개변수가 있는 생성자 public Student(String name, int age)는 매개변수로
+    // 이름과 나이를 받아 객체를 생성하는 생성자다. 이 생성자에는 매개변수로 받은 이름과 나이를 
+    // 각각 'name'과 'age'필드에 저장한다.
     public Student(String name, int age) {
         this.name = name;
         this.age = age;
@@ -157,6 +161,7 @@ class Student {
     //System.out.println(student1.getName); // "Unknown" 출력
     //System.out.println(student1.getAge); // 0 출력
     // 객체 생성2
+    // 매개변수가 있는 생성자를 호출한다.
     Student student2 = new Student("John", 20);
     //System.out.println(student2.getName); // John출력
     //System.out.println(student2.getAge); // 20 출력.
@@ -169,34 +174,3 @@ class Student {
     // 생성된 객체의 이름과 나이를 출력한다.
     
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// ---------------------------------------------------------------------------------------------------------------- 
-// 5★this 키워드와 객체 참조 변수
-// ----------------------------------------------------------------------------------------------------------------   
-// 6★static 멤버 (필드, 메서드)
