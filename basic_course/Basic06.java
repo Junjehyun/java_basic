@@ -50,6 +50,10 @@ public class Basic06 {
         public void sleep() {
             System.out.println(name + "is sleeping ");
         }
+
+        public void introduce() {
+            System.out.println("my name is " + name + "and " + age + " years old!");
+        }
     }
 
     // Animal 클래스를 상속받는 자식 클래스인 Dog클래스를 정의하는 코드이다.
