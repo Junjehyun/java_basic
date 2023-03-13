@@ -3,7 +3,7 @@
 // 6★static 멤버 (필드, 메서드)
 package basic_course;
 
-public class basic05_2 {
+public class Basic05_2 {
 // 5★this 키워드와 객체 참조 변수
 // this키워드 
 // this키워드는 객체의 인스턴스 변수와 메소드를 참조하기 위해 사용된다. 
