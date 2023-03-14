@@ -135,6 +135,77 @@ public class Basic06 {
         }
     }
 
-}
+
 // ------------------------------------------------------------------------------------------
-// 4★super 키워드 (여기서부터 재개)
+// 4★super 키워드
+// super 키워드는 자식 클래스에서 부모 클래스로부터 상속받은 멤버(필드, 메서드)를 참조하는데 사용되는
+// 특수한 참조 변수이다.
+// 자식 클래스에서 부모 클래스의 멤버를 참조할 때 'super' 키워드를 사용합니다. 이때 'super'키워드를
+// 사용하면 부모 클래스의 멤버와 자식 클래스의 멤버를 구분할 수 있다.
+
+// 'super'키워드는 다음과 같은 상황에서 사용된다.
+
+// 1. 부모 클래스의 생성자 호출 : 자식 클래스의 생성자에서 super()키워드를 사용하여 부모 클래스의 
+// 생성자를 호출할 수 있다. 이때 super()키워드는 반드시 자식 클래스의 생성자 첫 줄에서 호출 되어야한다.
+
+// 2. 부모 클래스의 멤버 참조 : 자식 클래스에서 부모 클래스의 멤버를 참조할 때 'super'를 사용하여
+// 부모 클래스의 멤버를 참조할 수 있다. 이때 super를 사용하면 부모 클래스의 멤버와 자식 클래스의 멤버를 
+// 구분할 수 있다. 
+
+// 코딩 예시를 살펴본다.
+// 예를들어 다음과 같은 'CellPhone' 부모 클래스와 'iPhone' 자식 클래스가 있다고 가정해보자.
+
+    class CellPhone {
+        protected String name;
+        protected int price;
+
+        public CellPhone(String name, int price) {
+            this.name = name;
+            this.price = price;
+        }
+
+        public void famous_rank() {
+            System.out.println("the best cellphone is iPhone!");
+        }
+
+        public void rival() {
+            System.out.println("rival is Galaxy");
+        }
+    }
+
+    class iPhone extends CellPhone {
+
+
+        public iPhone(String name, int price) {
+            // 여기 super (name, price)는 'iPhone'클래스의 생성자에서 'CellPhone'클래스의
+            // 생성자를 호출한다. 
+            super(name, price);
+            
+        }
+
+        iPhone myPhone = new iPhone("my iPhone", 1000000);
+        
+
+        public void accessory() {
+            System.out.println("The best Accessory is Air-pods");
+        }
+
+        // super.famous_rank()와 super.rival()은 iPhone클래스에서 오버라이딩한
+        // famous_rank()와 rival() 메서드에서 부모 클래스의 famous_rank()와 
+        // rival() 메서드를 호출한다.
+
+        public void famous_rank() {
+            super.famous_rank();
+            System.out.println("iPhone is the best product of the world");
+        }
+
+        public void rival() {
+            super.rival();
+            System.out.println("the rival is samsung and google fixel");
+        }
+
+
+        // 이와같이 super키워드는 자식 클래스에서 부모 클래스의 멤버를 참조할 때 사용되며,
+        // 부모 클래스의 생성자를 호출할 때도 사용된다.
+    }
+}
